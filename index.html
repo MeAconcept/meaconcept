@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>M&A Concept</title>
@@ -13,272 +17,413 @@
 <style>
 
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
+
 }
 
 body{
+
 font-family:'Montserrat',sans-serif;
+
 background:#f5f1ec;
+
 overflow-x:hidden;
+
 }
 
 /* ========= TOPBAR LUXO ========= */
 
 .topbar{
+
 position:fixed;
+
 top:0;
+
 left:0;
+
 width:100%;
+
 height:95px;
+
 background:rgba(255,255,255,.92);
+
 backdrop-filter:blur(12px);
+
 display:flex;
+
 align-items:center;
+
 justify-content:space-between;
+
 padding:0 40px;
+
 z-index:9999;
+
 border-bottom:1px solid rgba(0,0,0,.05);
+
 transition:.4s;
+
 }
 
 .menu{
+
 font-size:42px;
+
 cursor:pointer;
+
 color:#111;
+
 transition:.3s;
+
 }
 
 .menu:hover{
+
 transform:scale(1.1);
+
 }
 
 .logo{
+
 position:absolute;
+
 left:50%;
+
 transform:translateX(-50%);
+
 font-size:42px;
+
 font-weight:700;
+
 letter-spacing:3px;
+
 color:#111;
+
 }
 
 .logo span{
+
 font-weight:300;
+
 margin:0 10px;
+
 }
 
 .icons{
+
 display:flex;
+
 align-items:center;
+
 gap:25px;
+
 font-size:30px;
+
 color:#111;
+
 }
 
 /* ========= HERO ========= */
 
 .hero{
+
 height:100vh;
-  
+
 background:
+
 linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.35)),
-url('88c401c7-737b-4dbd-bfe7-02099c84f7f7.jpg')
+
+url('SUA-FOTO.jpg')
+
 center/cover no-repeat;
 
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 text-align:center;
+
 position:relative;
+
 padding-top:90px;
+
 }
 
 /* ========= CONTEÚDO ========= */
 
 .hero-content{
+
 max-width:900px;
+
 padding:20px;
+
 animation:fade 1.5s ease;
+
 }
 
 @keyframes fade{
+
 from{
+
 opacity:0;
+
 transform:translateY(40px);
+
 }
+
 to{
+
 opacity:1;
+
 transform:translateY(0);
+
 }
+
 }
 
 .hero h1{
+
 font-size:85px;
+
 font-weight:300;
+
 letter-spacing:14px;
+
 color:white;
+
 margin-bottom:10px;
+
 }
 
 .subtitle{
+
 color:#e6d6c2;
+
 font-size:16px;
+
 letter-spacing:10px;
+
 margin-bottom:35px;
+
 }
 
 .hero p{
+
 color:white;
+
 font-size:20px;
+
 line-height:2;
+
 font-weight:300;
+
 margin-bottom:45px;
+
 }
 
 /* ========= BOTÕES ========= */
 
 .buttons{
+
 display:flex;
+
 justify-content:center;
+
 gap:20px;
+
 flex-wrap:wrap;
+
 }
 
 .btn{
+
 padding:18px 38px;
+
 border-radius:60px;
+
 text-decoration:none;
+
 font-size:12px;
+
 letter-spacing:4px;
+
 transition:.4s;
+
 font-weight:600;
+
 }
 
 .btn-gold{
+
 background:#b89b7a;
+
 color:white;
+
 box-shadow:0 10px 25px rgba(184,155,122,.35);
+
 }
 
 .btn-gold:hover{
+
 transform:translateY(-4px);
+
 background:#a88765;
+
 }
 
 .btn-outline{
+
 border:1px solid rgba(255,255,255,.7);
+
 color:white;
+
 background:rgba(255,255,255,.08);
+
 backdrop-filter:blur(10px);
+
 }
 
 .btn-outline:hover{
+
 background:white;
+
 color:#111;
+
 }
 
 /* ========= SEÇÃO ========= */
 
 .section{
+
 padding:120px 10%;
+
 }
 
 .title{
+
 font-size:52px;
+
 font-weight:300;
+
 margin-bottom:25px;
+
 color:#2b2b2b;
+
 }
 
 .text{
+
 font-size:19px;
+
 line-height:2;
+
 color:#666;
+
 }
 
 /* ========= PRODUTOS ========= */
 
 .products{
+
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
 gap:35px;
+
 margin-top:60px;
+
 }
 
 .card{
+
 background:white;
+
 border-radius:28px;
+
 overflow:hidden;
+
 box-shadow:0 15px 40px rgba(0,0,0,.08);
+
 transition:.5s;
+
 }
 
 .card:hover{
+
 transform:translateY(-10px);
+
 }
 
 .card img{
+
 width:100%;
+
 height:430px;
+
 object-fit:cover;
+
 transition:.6s;
+
 }
 
 .card:hover img{
+
 transform:scale(1.05);
+
 }
 
 .card-content{
+
 padding:30px;
+
 }
 
 .card h3{
+
 font-size:24px;
+
 font-weight:500;
+
 margin-bottom:15px;
+
 color:#222;
+
 }
-  
-  <section class="section" id="catalogo">
-
-<h2 class="title">
-Catálogo DICOLLANI DENIM
-</h2>
-
-<br><br>
-
-<iframe
-src="catalogo.pdf"
-width="100%"
-height="900px"
-style="
-border:none;
-border-radius:25px;
-box-shadow:0 10px 40px rgba(0,0,0,.1);
-background:white;
-">
-</iframe>
-
-</section>
 
 /* ========= INSTAGRAM ========= */
 
 .instagram{
+
 padding:120px 20px;
+
 text-align:center;
+
 background:#efe7de;
+
 }
 
 /* ========= FOOTER ========= */
 
 .footer{
+
 background:#e7ddd3;
+
 padding:60px 20px;
+
 text-align:center;
+
 color:#6d5b48;
+
 line-height:2;
+
 }
 
 /* ========= MOBILE ========= */
@@ -286,39 +431,57 @@ line-height:2;
 @media(max-width:768px){
 
 .topbar{
+
 padding:0 20px;
+
 height:85px;
+
 }
 
 .logo{
+
 font-size:28px;
+
 }
 
 .hero h1{
+
 font-size:48px;
+
 letter-spacing:8px;
+
 }
 
 .hero p{
+
 font-size:16px;
+
 }
 
 .title{
+
 font-size:38px;
+
 }
 
 .menu{
+
 font-size:35px;
+
 }
 
 .icons{
+
 font-size:24px;
+
 gap:15px;
+
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -328,15 +491,21 @@ gap:15px;
 <header class="topbar">
 
 <div class="menu">
+
 ☰
+
 </div>
 
 <div class="logo">
+
 M<span>&</span>A
+
 </div>
 
 <div class="icons">
+
 👤 👜
+
 </div>
 
 </header>
@@ -350,19 +519,27 @@ M<span>&</span>A
 <h1>M & A</h1>
 
 <div class="subtitle">
+
 CONCEPT
+
 </div>
 
 <p>
+
 Moda feminina com identidade ✨<br>
+
 Elegância no essencial ✨<br>
+
 Peças selecionadas com propósito ✨
+
 </p>
 
 <div class="buttons">
 
 <a class="btn btn-gold"
+
 href="https://chat.whatsapp.com/G5LbioO1LCxJuBgJaMCfoi?mode=gi_t"
+
 target="_blank">
 
 ENTRAR NO GRUPO VIP
@@ -370,7 +547,9 @@ ENTRAR NO GRUPO VIP
 </a>
 
 <a class="btn btn-outline"
+
 href="https://instagram.com/meaconcept.br"
+
 target="_blank">
 
 INSTAGRAM
@@ -388,13 +567,19 @@ INSTAGRAM
 <section class="section">
 
 <h2 class="title">
+
 Elegância contemporânea
+
 </h2>
 
 <p class="text">
+
 A M&A Concept nasceu para mulheres que valorizam sofisticação,
+
 autenticidade e exclusividade em cada detalhe.
+
 Inspirada nas grandes maisons internacionais.
+
 </p>
 
 <div class="products">
@@ -405,23 +590,28 @@ Inspirada nas grandes maisons internacionais.
 
 <div class="card-content">
 
-<h3>DICOLLANI DENIM</h3>
+<h3>Vestido Premium</h3>
 
 <p class="text">
+
 Elegância e sofisticação em cada detalhe.
+
 </p>
 
 <br>
 
 <a class="btn btn-gold"
-href="88c401c7-737b-4dbd-bfe7-02099c84f7f7.jpg">
+
+href="https://chat.whatsapp.com/G5LbioO1LCxJuBgJaMCfoi?mode=gi_t"
+
 target="_blank">
-  
-VER CATÁLOGO
+
+SOLICITAR
 
 </a>
-  
+
 </div>
+
 </div>
 
 <div class="card">
@@ -433,13 +623,17 @@ VER CATÁLOGO
 <h3>Look Luxury</h3>
 
 <p class="text">
+
 Moda feminina moderna e sofisticada.
+
 </p>
 
 <br>
 
 <a class="btn btn-gold"
+
 href="https://chat.whatsapp.com/G5LbioO1LCxJuBgJaMCfoi?mode=gi_t"
+
 target="_blank">
 
 SOLICITAR
@@ -447,6 +641,7 @@ SOLICITAR
 </a>
 
 </div>
+
 </div>
 
 <div class="card">
@@ -458,13 +653,17 @@ SOLICITAR
 <h3>Blusa Elegance</h3>
 
 <p class="text">
+
 Peças selecionadas com propósito.
+
 </p>
 
 <br>
 
 <a class="btn btn-gold"
+
 href="https://chat.whatsapp.com/G5LbioO1LCxJuBgJaMCfoi?mode=gi_t"
+
 target="_blank">
 
 SOLICITAR
@@ -472,63 +671,29 @@ SOLICITAR
 </a>
 
 </div>
+
 </div>
 
 </div>
 
 </section>
-  
-<!-- ========= CATÁLOGO ========= -->
 
-<section class="section" id="catalogo">
-
-<h2 class="title">
-Catálogo DICOLLANI DENIM
-</h2>
-
-<p class="text">
-Clique na imagem para acessar o catálogo completo no WhatsApp.
-</p>
-
-<br><br>
-
-<a href="catalogo.pdf"
-target="_blank">
-
-<img src="88c401c7-737b-4dbd-bfe7-02099c84f7f7.jpg"
-style="
-width:100%;
-max-width:500px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-transition:.4s;
-cursor:pointer;
-">
-
-</a>
-
-</section>
-
- <a class="btn btn-gold"
-href="./catalogo.pdf"
-target="_blank">
-
-VER CATÁLOGO
-
-</a>
-  
 <!-- ========= INSTAGRAM ========= -->
 
 <section class="instagram">
 
 <h2 class="title">
+
 @meaconcept.br
+
 </h2>
 
 <br>
 
 <a class="btn btn-gold"
+
 href="https://instagram.com/meaconcept.br"
+
 target="_blank">
 
 ACESSAR INSTAGRAM
@@ -542,18 +707,21 @@ ACESSAR INSTAGRAM
 <footer class="footer">
 
 <p>
+
 M & A Concept — Rio Verde GO
+
 </p>
 
 <br>
 
 <p>
+
 Por @myrelle.furtado & @a.pcardosoc
+
 </p>
 
 </footer>
 
 </body>
-</html>
-</body>
+
 </html>
